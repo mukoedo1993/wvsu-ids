@@ -1,0 +1,30 @@
+.top {
+ 
+    @mixin atMedium{
+    font-weight: 400;
+    
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: $teal_transparent;
+    color:black;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: ease-out .3s;
+  &:hover {
+    text-shadow: 1px 1px #ff0000;
+    transform: rotate(-20deg) scale(1.15) translateY(-1rem);
+    cursor: pointer;
+  }
+  &__hidden {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+    }
+
+}
