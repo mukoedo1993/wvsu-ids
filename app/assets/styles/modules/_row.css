@@ -20,13 +20,13 @@
 
    @mixin atMedium {
     display: grid;
-    margin-top: 1.875rem;
+    margin-top: 1.75rem;
     grid-template-columns: repeat(12, 1fr);
 
 
 
     &__b-margin-until-medium {
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
 
 
@@ -38,7 +38,7 @@
    
  
     &--gutters-large {
-        column-gap: 8%;
+        column-gap: 5.3%;
     }
  
     &--gutters-small {
@@ -94,7 +94,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     &__b-margin-until-large {
-        margin-bottom: 0;
+        margin-bottom: 1 rem;
     }
 
  
@@ -134,7 +134,7 @@
 
     & > div{
         /*Two lines of code below force it to become a flex box.*/
-        float:none;
+        /*float:none;*/
         display: flex;
     }
 }
@@ -143,7 +143,7 @@
 /*Begin equal height rules COURSE 34*/
 &--equal-height-at-large {
     @mixin atLarge{
-    /*display:flex;*/
+    display:flex;
     /*deleted in course 41st.*/
 
 
